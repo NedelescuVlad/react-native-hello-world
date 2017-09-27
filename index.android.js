@@ -5,6 +5,7 @@
  */
 
 import React, { Component } from 'react';
+import codePush from "react-native-code-push";
 import {
   AppRegistry,
   StyleSheet,
@@ -30,6 +31,8 @@ export default class ReactNativeHelloWorld extends Component {
     );
   }
 }
+
+ReactNativeHelloWorld = codePush(ReactNativeHelloWorld);
 
 const styles = StyleSheet.create({
   container: {
