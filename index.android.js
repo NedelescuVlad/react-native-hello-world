@@ -13,6 +13,8 @@ import {
   View
 } from 'react-native';
 
+let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
+
 export default class ReactNativeHelloWorld extends Component {
   render() {
     return (
