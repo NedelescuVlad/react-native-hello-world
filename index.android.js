@@ -5,15 +5,13 @@
  */
 
 import React, { Component } from 'react';
-import codePush from "react-native-code-push";
+import codePush from 'react-native-code-push';
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View
 } from 'react-native';
-
-let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
 
 export default class ReactNativeHelloWorld extends Component {
   render() {
