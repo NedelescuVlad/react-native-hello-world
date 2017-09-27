@@ -1,5 +1,6 @@
 <resources>
     <string moduleConfig="true" name="mobileCenterCrashes_whenToSendCrashes">ALWAYS_SEND</string>
     <string moduleConfig="true" name="mobileCenterAnalytics_whenToEnableAnalytics">ALWAYS_SEND</string>
-    <string name="app_name">ReactNativeReactNativeHelloWorld</string>
+    <string name="reactNativeCodePush_androidDeploymentKey">ReactNativeReactNativeHelloWorld</string>
+    <string name="app_name">gTcpg6X2eyW2uccxDrx92L6GAvLhd9e59a4a-9860-4595-90f1-1c907a7bcfc7</string>
 </resources>
