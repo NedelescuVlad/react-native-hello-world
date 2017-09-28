@@ -16,7 +16,6 @@ import {
 export default class ReactNativeHelloWorld extends Component {
   render() {
     return (
-      <Text>Hello code push</Text>
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
