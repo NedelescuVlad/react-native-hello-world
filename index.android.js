@@ -8,41 +8,16 @@ import React, { Component } from 'react';
 import codePush from "react-native-code-push";
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
-  View
+  WebView
 } from 'react-native';
 
-export default class ReactNativeHelloWorld extends Component {
+class ViagogoWeb extends Component {
   render() {
-    return (
-      <WebView
-        source={{uri: 'https://www.viagogo.co.uk/'}}
-        style={{flex: 1}}
-      />
-    );
+    return <WebView source={{uri: 'https://www.viagogo.co.uk/'}} />
   }
 }
 
-ReactNativeHelloWorld = codePush(ReactNativeHelloWorld);
+export default ViagogoWeb;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
+ReactNativeHelloWorld = codePush(ViagogoWeb);
 AppRegistry.registerComponent('ReactNativeHelloWorld', () => ReactNativeHelloWorld);
