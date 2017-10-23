@@ -10,15 +10,22 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  WebView
 } from 'react-native';
 
-export default class ReactNativeHelloWorld extends Component {
+class ViagogoWeb extends Component {
+  render() {
+    return <WebView source={{uri: 'https://www.viagogo.co.uk/'}} />
+  }
+}
+
+class ReactNativeHelloWorld extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to Jurassic Park!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.android.js
@@ -32,7 +39,10 @@ export default class ReactNativeHelloWorld extends Component {
   }
 }
 
-ReactNativeHelloWorld = codePush(ReactNativeHelloWorld);
+export default ViagogoWeb;
+
+//ReactNativeHelloWorld = codePush(ReactNativeHelloWorld);
+ReactNativeHelloWorld = codePush(ViagogoWeb);
 
 const styles = StyleSheet.create({
   container: {
