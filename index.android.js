@@ -9,41 +9,52 @@ import codePush from "react-native-code-push";
 import {
   AppRegistry,
   WebView,
-  BackAndroid
+  BackHandler
 } from 'react-native';
 
+const DEFAULT_URL = 'https://www.viagogo.co.uk/';
+const WEBVIEW_REF = 'vgg_webview';
+
 class ViagogoWeb extends Component {
-  state = {};
+  constructor(props) {
+    super(props)
+    this.state = { canGoBack: false }
+  }
+  
+  _onNavigationStateChange(navState) {
+    this.state.canGoBack = navState.canGoBack;
+  }
 
   componentDidMount() {
-    BackAndroid.addEventListener('hardwareBackPress', this.backHandler);
-    this.setState({
-      backButtonEnabled: true
+     codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE
     });
+
+    BackHandler.addEventListener('hardwareBackPress', this.hardwareBack.bind(this));
   }
 
   componentWillUnmount() {
-    codePush.sync({
-      updateDialog: true,
-      installMode: codePush.InstallMode.IMMEDIATE
-    })
-    this.setState({
-      backButtonEnabled: false
-    })
-    BackAndroid.removeEventListener('hardwareBackPress', this.backHandler);
+    BackHandler.removeEventListener('hardwareBackPress', this.hardwareBack);
   }
 
-  backHandler = () => {
-    if (this.state.backButtonEnabled) {
-      this.refs["vgg_webview"].goBack();
-      return true;
-    }
+  hardwareBack() {
+    if (this.state.canGoBack) {
+        this.goBack();
+        return true;
+      }
+    return false;
+  }
+
+  goBack() {
+    this.refs[WEBVIEW_REF].goBack();
   }
 
   render() {
     return <WebView 
-            ref={"vgg_webview"}
-            source={{uri: 'https://www.viagogo.co.uk/'}} />
+            ref={WEBVIEW_REF}
+            onNavigationStateChange={this._onNavigationStateChange.bind(this)}
+            source={{uri: DEFAULT_URL}} />
   }
 }
 
