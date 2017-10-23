@@ -18,43 +18,44 @@ const WEBVIEW_REF = 'vgg_webview';
 class ViagogoWeb extends Component {
   constructor(props) {
     super(props)
-    this.state = { canGoBack: false }
+    this.boundGoBack = this.hardwareBack.bind(this);
+    this.state = { 
+      canGoBack: false
+     }
   }
-  
+
   _onNavigationStateChange(navState) {
-    this.state.canGoBack = navState.canGoBack;
+    this.setState({
+      canGoBack: navState.canGoBack
+    })
   }
 
   componentDidMount() {
-     codePush.sync({
+    codePush.sync({
       updateDialog: true,
       installMode: codePush.InstallMode.IMMEDIATE
     });
 
-    BackHandler.addEventListener('hardwareBackPress', this.hardwareBack.bind(this));
+    BackHandler.addEventListener('hardwareBackPress', this.boundGoBack);
   }
 
   componentWillUnmount() {
-    BackHandler.removeEventListener('hardwareBackPress', this.hardwareBack);
+    BackHandler.removeEventListener('hardwareBackPress', this.boundGoBack);
   }
 
   hardwareBack() {
     if (this.state.canGoBack) {
-        this.goBack();
-        return true;
-      }
+      this.refs[WEBVIEW_REF].goBack();
+      return true;
+    }
     return false;
   }
 
-  goBack() {
-    this.refs[WEBVIEW_REF].goBack();
-  }
-
   render() {
-    return <WebView 
-            ref={WEBVIEW_REF}
-            onNavigationStateChange={this._onNavigationStateChange.bind(this)}
-            source={{uri: DEFAULT_URL}} />
+    return <WebView
+      ref={WEBVIEW_REF}
+      onNavigationStateChange={this._onNavigationStateChange.bind(this)}
+      source={{ uri: DEFAULT_URL }} />
   }
 }
 
