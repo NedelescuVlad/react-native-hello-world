@@ -4,50 +4,47 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, {
+  Component
+} from 'react';
+import codePush from "react-native-code-push";
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
-  View
+  WebView,
+  BackHandler
 } from 'react-native';
 
-export default class ReactNativeHelloWorld extends Component {
+const DEFAULT_URL = 'https://www.viagogo.co.uk/';
+
+class ViagogoWeb extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  componentDidMount() {
+    codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE
+    });
+  }
+
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
+    return <WebView
+    style = {
+      {
+        marginTop: 20
+      }
+    }
+    source = {
+      {
+        uri: DEFAULT_URL
+      }
+    }
+    />
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+export default ViagogoWeb;
 
+ReactNativeHelloWorld = codePush(ViagogoWeb);
 AppRegistry.registerComponent('ReactNativeHelloWorld', () => ReactNativeHelloWorld);
