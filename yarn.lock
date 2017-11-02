@@ -1288,7 +1288,7 @@ crc@3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/crc/-/crc-3.3.0.tgz#fa622e1bc388bf257309082d6b65200ce67090ba"
 
-create-react-class@^15.5.2:
+create-react-class@^15.5.2, create-react-class@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.2.tgz#cf1ed15f12aad7f14ef5f2dfe05e6c42f91ef02a"
   dependencies:
@@ -1701,7 +1701,7 @@ fbjs@0.8.12:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-fbjs@^0.8.16, fbjs@^0.8.9:
+fbjs@^0.8.16, fbjs@^0.8.3, fbjs@^0.8.9:
   version "0.8.16"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
   dependencies:
@@ -3601,7 +3601,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.6, prop-types@^15.5.8:
+prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -3719,6 +3719,14 @@ react-native-code-push@^5.1.1-beta:
     inquirer "1.1.2"
     plist "1.2.0"
     xcode "0.9.2"
+
+react-native-wkwebview-reborn@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/react-native-wkwebview-reborn/-/react-native-wkwebview-reborn-1.10.0.tgz#674cbb8566bf15ac063e4d7faf1c1673c8cc2799"
+  dependencies:
+    create-react-class "^15.6.2"
+    fbjs "^0.8.3"
+    prop-types "^15.6.0"
 
 react-native@0.48.4:
   version "0.48.4"

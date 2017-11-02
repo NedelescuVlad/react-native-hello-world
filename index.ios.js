@@ -10,9 +10,10 @@ import React, {
 import codePush from "react-native-code-push";
 import {
   AppRegistry,
-  WebView,
   BackHandler
 } from 'react-native';
+import WebView from './js/WebView.ios';
+
 
 const DEFAULT_URL = 'https://www.viagogo.co.uk/';
 

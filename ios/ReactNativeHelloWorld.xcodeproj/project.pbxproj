@@ -46,6 +46,7 @@
 		9A059CFCBB6F181C58E72763 /* libPods-ReactNativeHelloWorld-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2FFF3F4C6141F19BFA3BCF /* libPods-ReactNativeHelloWorld-tvOSTests.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B84AD621F7B74DEBA7AF61D9 /* libRNCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6E2874D0264EC9807642EA /* libRNCrashes.a */; };
+		BF2E03426A3D46588629B8BE /* libRCTWKWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A61B82147B4B3B999BCC18 /* libRCTWKWebView.a */; };
 		F72A220360A34F4CBFA9BBF7 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E23EFC59C2A44E319D669F4D /* libCodePush.a */; };
 /* End PBXBuildFile section */
 
@@ -288,6 +289,13 @@
 			remoteGlobalIDString = C35AEC211EF91F9300931F0C;
 			remoteInfo = RNMobileCenter;
 		};
+		AEAD9E3D1FAB295600088E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC2C022803C49569B40F495 /* RCTWKWebView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0974579A1D2A440A000D9368;
+			remoteInfo = RCTWKWebView;
+		};
 		AEC7B8221FAA375B000AAB7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -346,6 +354,7 @@
 		370C9991D12FD8CF16D4C7A2 /* Pods-ReactNativeHelloWorldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeHelloWorldTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeHelloWorldTests/Pods-ReactNativeHelloWorldTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D705CEA963E4CDDB55C6F06 /* RNCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCrashes.xcodeproj; path = "../node_modules/mobile-center-crashes/ios/RNCrashes.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		5FC2C022803C49569B40F495 /* RCTWKWebView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTWKWebView.xcodeproj; path = "../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView.xcodeproj"; sourceTree = "<group>"; };
 		6472F94F10A17CAFA672F7C0 /* Pods-ReactNativeHelloWorld-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeHelloWorld-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeHelloWorld-tvOSTests/Pods-ReactNativeHelloWorld-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6925F54B831CB6E0B6248072 /* Pods-ReactNativeHelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeHelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeHelloWorld/Pods-ReactNativeHelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		6A5FD97277B9472EAA8543EA /* CodePush.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
@@ -354,6 +363,7 @@
 		7D2FFF3F4C6141F19BFA3BCF /* libPods-ReactNativeHelloWorld-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeHelloWorld-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8DE8ED03FE4C4CD19DD16C7D /* libRNMobileCenter.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNMobileCenter.a; sourceTree = "<group>"; };
+		90A61B82147B4B3B999BCC18 /* libRCTWKWebView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTWKWebView.a; sourceTree = "<group>"; };
 		A4EDACA140B82F911918309C /* libPods-ReactNativeHelloWorld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeHelloWorld.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90D156BDE1F5AED44E013E7 /* Pods-ReactNativeHelloWorld-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeHelloWorld-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeHelloWorld-tvOS/Pods-ReactNativeHelloWorld-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
@@ -401,6 +411,7 @@
 				F72A220360A34F4CBFA9BBF7 /* libCodePush.a in Frameworks */,
 				17B27763AF174A05A44798DA /* libz.tbd in Frameworks */,
 				21F209E07BFAE8BC1B383620 /* libPods-ReactNativeHelloWorld.a in Frameworks */,
+				BF2E03426A3D46588629B8BE /* libRCTWKWebView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +604,7 @@
 				D36E1461BA964684A7AB8547 /* RNAnalytics.xcodeproj */,
 				3D705CEA963E4CDDB55C6F06 /* RNCrashes.xcodeproj */,
 				6A5FD97277B9472EAA8543EA /* CodePush.xcodeproj */,
+				5FC2C022803C49569B40F495 /* RCTWKWebView.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -671,6 +683,14 @@
 			isa = PBXGroup;
 			children = (
 				AE03AE9B1FA8F11900DA0D25 /* libRNAnalytics.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEAD9E251FAB295600088E04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEAD9E3E1FAB295600088E04 /* libRCTWKWebView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -860,6 +880,10 @@
 				{
 					ProductGroup = 139FDEE71B06529A00C62182 /* Products */;
 					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+				},
+				{
+					ProductGroup = AEAD9E251FAB295600088E04 /* Products */;
+					ProjectRef = 5FC2C022803C49569B40F495 /* RCTWKWebView.xcodeproj */;
 				},
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
@@ -1111,6 +1135,13 @@
 			fileType = archive.ar;
 			path = libRNMobileCenter.a;
 			remoteRef = AE03AEA01FA8F11900DA0D25 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEAD9E3E1FAB295600088E04 /* libRCTWKWebView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWKWebView.a;
+			remoteRef = AEAD9E3D1FAB295600088E04 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		AEC7B8231FAA375B000AAB7A /* libthird-party.a */ = {
@@ -1479,12 +1510,14 @@
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
 					"$(SRCROOT)..\node_modulesmobile-center-crashesiosRNCrashes",
 					"$(SRCROOT)..\node_modules\neact-native-code-pushiosCodePush/**",
+					"$(SRCROOT)/../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView",
 				);
 				INFOPLIST_FILE = ReactNativeHelloWorldTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1511,12 +1544,14 @@
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
 					"$(SRCROOT)..\node_modulesmobile-center-crashesiosRNCrashes",
 					"$(SRCROOT)..\node_modules\neact-native-code-pushiosCodePush/**",
+					"$(SRCROOT)/../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView",
 				);
 				INFOPLIST_FILE = ReactNativeHelloWorldTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1545,6 +1580,7 @@
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
 					"$(SRCROOT)..\node_modulesmobile-center-crashesiosRNCrashes",
 					"$(SRCROOT)..\node_modules\neact-native-code-pushiosCodePush/**",
+					"$(SRCROOT)/../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView",
 				);
 				INFOPLIST_FILE = ReactNativeHelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1573,6 +1609,7 @@
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
 					"$(SRCROOT)..\node_modulesmobile-center-crashesiosRNCrashes",
 					"$(SRCROOT)..\node_modules\neact-native-code-pushiosCodePush/**",
+					"$(SRCROOT)/../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView",
 				);
 				INFOPLIST_FILE = ReactNativeHelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1607,11 +1644,13 @@
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
 					"$(SRCROOT)..\node_modulesmobile-center-crashesiosRNCrashes",
 					"$(SRCROOT)..\node_modules\neact-native-code-pushiosCodePush/**",
+					"$(SRCROOT)/../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView",
 				);
 				INFOPLIST_FILE = "ReactNativeHelloWorld-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1648,11 +1687,13 @@
 					"$(SRCROOT)..\node_modulesmobile-center-analyticsiosRNAnalytics",
 					"$(SRCROOT)..\node_modulesmobile-center-crashesiosRNCrashes",
 					"$(SRCROOT)..\node_modules\neact-native-code-pushiosCodePush/**",
+					"$(SRCROOT)/../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView",
 				);
 				INFOPLIST_FILE = "ReactNativeHelloWorld-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1690,6 +1731,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ReactNativeHelloWorld-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1715,6 +1757,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
